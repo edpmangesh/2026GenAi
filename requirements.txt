@@ -1,0 +1,2 @@
+googlw-genai
+streamlit
