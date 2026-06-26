@@ -24,10 +24,10 @@ response_placeholder = st.empty()
 question = st.text_input("", placeholder="Enter your Python question here...")
 col1, col2, col3 = st.columns([4, 1, 4])
 with col2:
-send =st.button("Send")
+      send =st.button("Send")
 if send:
-question = question + config.system_instruction
-response = mychat.send_message(question)
-response_placeholder.write(response.text)
+      question = question + config.system_instruction
+      response = mychat.send_message(question)
+      response_placeholder.write(response.text)
 
 
